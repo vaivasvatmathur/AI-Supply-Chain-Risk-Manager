@@ -1,4 +1,4 @@
-# 🤖 AI Supply Chain Risk Manager
+# AI Supply Chain Risk Manager
 
 An AI-driven supply chain monitoring system that detects operational risks, predicts disruptions, and recommends mitigation strategies in real time.
 
@@ -6,7 +6,7 @@ This project simulates an **AI Supply Chain Control Tower** that continuously an
 
 ---
 
-# 🚀 Features
+# Features
 
 ✔ Real-time supply chain monitoring
 ✔ AI risk detection engine
@@ -18,7 +18,7 @@ This project simulates an **AI Supply Chain Control Tower** that continuously an
 
 ---
 
-# 🧠 Agentic AI Capabilities
+# Agentic AI Capabilities
 
 The system behaves like a **Supply Chain Monitoring Agent** that:
 
@@ -29,7 +29,7 @@ The system behaves like a **Supply Chain Monitoring Agent** that:
 
 ---
 
-# 🏗 System Architecture
+# System Architecture
 
 ```
 Database (PostgreSQL / Supabase)
@@ -45,7 +45,7 @@ Streamlit Control Tower Dashboard
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 | Layer            | Technology            |
 | ---------------- | --------------------- |
@@ -59,7 +59,7 @@ Streamlit Control Tower Dashboard
 
 ---
 
-# 📊 Dashboard Capabilities
+# Dashboard Capabilities
 
 The dashboard provides:
 
@@ -72,13 +72,13 @@ The dashboard provides:
 
 ---
 
-# 🌍 Supply Chain Control Map
+# Supply Chain Control Map
 
 Visualizes logistics operations across multiple cities.
 
 ---
 
-# ⚠ Crisis Simulation Engine
+# Crisis Simulation Engine
 
 Users can simulate disruptions such as:
 
@@ -91,13 +91,13 @@ The AI estimates their impact on global supply chain risk.
 
 ---
 
-# 📸 Dashboard Preview
+# Dashboard Preview
 
 (Add screenshots here)
 
 ---
 
-# ⚙️ Installation
+# Installation
 
 Clone the repository
 
@@ -120,7 +120,7 @@ streamlit run dashboard.py
 
 ---
 
-# 📦 Database
+# Database
 
 PostgreSQL database structure includes:
 
@@ -133,7 +133,7 @@ PostgreSQL database structure includes:
 
 ---
 
-# 🎯 Applications
+# Applications
 
 • Manufacturing supply chains
 • E-commerce logistics
@@ -142,16 +142,9 @@ PostgreSQL database structure includes:
 
 ---
 
-# 📌 Future Improvements
+# Future Improvements
 
 • Reinforcement learning supply chain optimization
 • Integration with real logistics APIs
 • Autonomous supplier switching agent
 • IoT shipment tracking
-
----
-
-# 👨‍💻 Author
-
-Vaivasvat Mathur
-AI Supply Chain Risk Manager Project
