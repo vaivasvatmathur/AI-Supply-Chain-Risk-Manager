@@ -24,10 +24,10 @@ st_autorefresh(interval=10000)
 # ======================
 
 conn = psycopg2.connect(
-    database="supplychain_ai",
+    database="postgres",
     user="postgres",
     password="Vaivasvat@2405",
-    host="localhost",
+    host="db.ctsauxidbhbejknhjjcy.supabase.co",
     port="5432"
 )
 
