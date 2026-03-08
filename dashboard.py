@@ -291,9 +291,7 @@ fig = px.scatter_mapbox(
     height=500
 )
 
-fig.update_layout(mapbox_style="carto-darkmatter")
 
-st.plotly_chart(fig, use_container_width=True)
 
 
 st.map(map_data)
