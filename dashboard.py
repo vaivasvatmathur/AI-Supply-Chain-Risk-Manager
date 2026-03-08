@@ -24,11 +24,12 @@ st_autorefresh(interval=10000)
 # ======================
 
 conn = psycopg2.connect(
-    database="postgres",
-    user="postgres",
-    password="Vaivasvat@2405",
     host="aws-1-ap-southeast-2.pooler.supabase.com",
-    port="5432"
+    database="postgres",
+    user="postgres.ctsauxidbhbejknhjjcy",
+    password="Vaivasvat@2405",
+    port="5432",
+    sslmode="require"
 )
 
 # ======================
