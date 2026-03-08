@@ -8,13 +8,13 @@ This project simulates an **AI Supply Chain Control Tower** that continuously an
 
 # Features
 
-✔ Real-time supply chain monitoring
-✔ AI risk detection engine
-✔ Supply chain disruption prediction
-✔ Supplier recommendation system
-✔ Global logistics visualization
-✔ Supply chain crisis simulator
-✔ Interactive analytics dashboard
+- Real-time supply chain monitoring
+- AI risk detection engine
+- Supply chain disruption prediction
+- Supplier recommendation system
+- Global logistics visualization
+- Supply chain crisis simulator
+- Interactive analytics dashboard
 
 ---
 
