@@ -1,3 +1,9 @@
+AI Supply Chain Risk Manager
+
+ **Live Application:**
+👉 https://your-app-name.streamlit.app
+
+---
 # AI Supply Chain Risk Manager
 
 An AI-driven supply chain monitoring system that detects operational risks, predicts disruptions, and recommends mitigation strategies in real time.
