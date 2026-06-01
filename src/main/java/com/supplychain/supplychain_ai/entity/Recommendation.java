@@ -3,6 +3,7 @@ package com.supplychain.supplychain_ai.entity;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "recommendation")
 public class Recommendation {
 
     @Id

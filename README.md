@@ -1,156 +1,64 @@
-AI Supply Chain Risk Manager
-
- **Live Application:**
-👉 https://your-app-name.streamlit.app
-
----
 # AI Supply Chain Risk Manager
 
-An AI-driven supply chain monitoring system that detects operational risks, predicts disruptions, and recommends mitigation strategies in real time.
+An AI-driven supply chain monitoring system that detects operational risks, predicts disruptions, and recommends mitigation strategies.
 
-This project simulates an **AI Supply Chain Control Tower** that continuously analyzes logistics data and provides decision intelligence.
-
----
-
-# Features
-
-- Real-time supply chain monitoring
-- AI risk detection engine
-- Supply chain disruption prediction
-- Supplier recommendation system
-- Global logistics visualization
-- Supply chain crisis simulator
-- Interactive analytics dashboard
-
----
-
-# Agentic AI Capabilities
-
-The system behaves like a **Supply Chain Monitoring Agent** that:
-
-1. Observes operational data (orders, suppliers, inventory)
-2. Analyzes supply chain health
-3. Predicts disruptions using ML
-4. Recommends mitigation strategies
-
----
-
-# System Architecture
+## Project structure
 
 ```
-Database (PostgreSQL / Supabase)
-        ↓
-AI Monitoring Engine (Python)
-        ↓
-Risk Detection + Prediction
-        ↓
-Decision Recommendation
-        ↓
-Streamlit Control Tower Dashboard
+├── dashboard.py          # Streamlit control tower (main UI)
+├── requirements.txt      # Python dependencies
+├── pom.xml               # Spring Boot API
+├── mvnw / mvnw.cmd        # Maven wrapper
+├── .env.example          # Environment variable template
+└── src/
+    ├── main/java/...     # REST API, entities, monitoring agent
+    └── test/             # H2-backed integration tests
 ```
 
----
+## Features
 
-# Tech Stack
+- Real-time supply chain monitoring dashboard
+- AI risk detection and supplier recommendations (Spring Boot API)
+- Scheduled monitoring agent for delivery delays
+- Weather, fuel, and news risk signals in the dashboard
 
-| Layer            | Technology            |
-| ---------------- | --------------------- |
-| Dashboard        | Streamlit             |
-| Backend          | Python                |
-| Database         | PostgreSQL (Supabase) |
-| Visualization    | Plotly                |
-| Machine Learning | Scikit-learn          |
-| Data Processing  | Pandas / NumPy        |
-| Deployment       | Streamlit Cloud       |
+## Tech stack
 
----
+| Layer     | Technology              |
+| --------- | ----------------------- |
+| Dashboard | Streamlit, Plotly       |
+| API       | Spring Boot 3, JPA      |
+| Database  | PostgreSQL (Supabase)   |
+| ML        | scikit-learn (dashboard)|
 
-# Dashboard Capabilities
+## Quick start
 
-The dashboard provides:
+### 1. Configure environment
 
-• Risk Index Monitoring
-• Supplier Performance Analytics
-• AI Decision Explanation
-• Supply Chain Activity Feed
-• Logistics Network Visualization
-• Crisis Simulation Engine
+Copy `.env.example` to `.env` and fill in your database and API keys.
 
----
+**Dashboard** uses: `DB_HOST`, `DB_USER`, `DB_PASSWORD`, and optionally `DB_NAME`, `DB_PORT`, `DB_SSLMODE`, `OPENWEATHER_API_KEY`, `NEWS_API_KEY`, `FUEL_API_KEY`.
 
-# Supply Chain Control Map
+**API** uses: `DATABASE_URL`, `DATABASE_USERNAME`, `DATABASE_PASSWORD`, `OPENWEATHER_API_KEY`.
 
-Visualizes logistics operations across multiple cities.
+### 2. Run the dashboard
 
----
-
-# Crisis Simulation Engine
-
-Users can simulate disruptions such as:
-
-• Port shutdown
-• Supplier bankruptcy
-• Transportation strikes
-• Natural disasters
-
-The AI estimates their impact on global supply chain risk.
-
----
-
-# Dashboard Preview
-
-(Add screenshots here)
-
----
-
-# Installation
-
-Clone the repository
-
-```
-git clone https://github.com/yourusername/AI-Supply-Chain-Risk-Manager.git
-cd AI-Supply-Chain-Risk-Manager
-```
-
-Install dependencies
-
-```
+```bash
 pip install -r requirements.txt
-```
-
-Run the dashboard
-
-```
 streamlit run dashboard.py
 ```
 
----
+### 3. Run the API (optional)
 
-# Database
+Requires Java 17+:
 
-PostgreSQL database structure includes:
+```bash
+./mvnw spring-boot:run
+```
 
-• Orders
-• Suppliers
-• Inventory
-• Risk Alerts
-• Recommendations
-• Order Locations
+API runs on `http://localhost:8080`. Endpoints include `/orders`, `/suppliers`, `/inventory`, `/risk`, `/recommendations`.
 
----
+## Database tables
 
-# Applications
-
-• Manufacturing supply chains
-• E-commerce logistics
-• Global trade monitoring
-• Smart supply chain control towers
-
----
-
-# Future Improvements
-
-• Reinforcement learning supply chain optimization
-• Integration with real logistics APIs
-• Autonomous supplier switching agent
-• IoT shipment tracking
+- `orders`, `supplier`, `inventory`, `risk_alert`, `recommendation`
+- `order_location` (optional, for the India logistics map)

@@ -29,10 +29,9 @@ public class RecommendationService {
                 .max((s1, s2) -> Double.compare(
                         s1.getReliabilityScore(),
                         s2.getReliabilityScore()))
-                .orElse(null);
+                .orElseThrow(() -> new IllegalStateException("No suppliers available for recommendation"));
 
         Recommendation recommendation = new Recommendation();
-
         recommendation.setOrderId(orderId);
         recommendation.setRecommendedSupplierId(bestSupplier.getId());
         recommendation.setEstimatedCost(bestSupplier.getCostIndex());

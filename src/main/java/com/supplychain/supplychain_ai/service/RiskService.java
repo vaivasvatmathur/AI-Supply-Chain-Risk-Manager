@@ -30,15 +30,15 @@ public class RiskService {
         for (Order order : orders) {
 
             if (order.getExpectedDelivery() != null &&
-                order.getExpectedDelivery().isBefore(LocalDate.now())) {
+                order.getExpectedDelivery().isBefore(LocalDate.now()) &&
+                !riskAlertRepository.existsByOrderIdAndReason(
+                        order.getId(), "Delivery delay detected")) {
 
                 RiskAlert alert = new RiskAlert();
-
                 alert.setOrderId(order.getId());
                 alert.setRiskScore(0.8);
                 alert.setReason("Delivery delay detected");
                 alert.setTimestamp(LocalDateTime.now());
-
                 riskAlertRepository.save(alert);
             }
         }

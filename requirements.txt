@@ -4,5 +4,5 @@ plotly
 psycopg2-binary
 scikit-learn
 numpy
+requests
 streamlit-autorefresh
-graphviz
